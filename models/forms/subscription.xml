@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>	
+	<fieldset name="myfields">
+		<field name="clef" type="hidden" label="JGRID_HEADING_ID" readonly="true"/>
+		<field name="date_creation" type="hidden" label="COM_ITINERARY_FIELD_DATE_CREATION_LABEL" description="COM_ITINERARY_FIELD_DATE_CREATION_DESC" readonly="true"/>
+		<field name="clef_parcours" type="hidden" label="COM_ITINERARY_FIELD_CLEF_PARCOURS_LABEL" readonly="true"/>
+		<field name="clef_planificateur" type="hidden" label="COM_ITINERARY_FIELD_CLEF_PLANIFICATEUR_LABEL" readonly="true"/>
+		<field name="clef_parcours_size" type="hidden" label="COM_ITINERARY_FIELD_CLEF_PARCOURS_SIZE_LABEL" readonly="true"/>
+		<field name="date_debut" type="hidden" label="COM_ITINERARY_FIELD_DATE_DEBUT_LABEL" readonly="true"/>
+		<field name="date_fin" type="hidden" label="COM_ITINERARY_FIELD_DATE_FIN_LABEL" readonly="true"/>
+		<field name="prix" type="hidden" label="COM_ITINERARY_FIELD_PRIX_TTC_LABEL" readonly="true" min="1" max="400"/>
+		<field name="clef_tva" type="hidden" label="COM_ITINERARY_FIELD_TVA_LABEL" readonly="true"/>
+		<field name="cgv_approval" type="hidden" label="COM_ITINERARY_FIELD_CGV_APPROVAL_LABEL" readonly="true"/>
+		<field name="nb_facture" type="hidden" label="COM_ITINERARY_FIELD_CLEF_PLANIFICATEUR_LABEL" readonly="true"/>
+	</fieldset>
+</form>

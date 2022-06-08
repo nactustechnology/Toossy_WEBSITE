@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+   <layout title="com_itinerary_subscription_view_card_title" option="com_itinerary_subscription_view_card_option">
+      <message>
+         <![CDATA[com_itinerary_subscription_view_card_desc]]>
+      </message>
+   </layout>
+</metadata>

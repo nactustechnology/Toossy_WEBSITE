@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>	
+	<fieldset name="myfields">
+		<field name="clef" type="hidden" label="JGRID_HEADING_ID" class="" readonly="true"/>
+		<field name="clef_planificateur" type="hidden" label="COM_ITINERARY_FIELD_CLEF_PLANIFICATEUR_LABEL" class="" readonly="true"/>
+		<field name="clef_parcours" type="hidden" label="COM_ITINERARY_FIELD_CLEF_PARCOURS_LABEL" class="" readonly="true"/>
+		<field name="longitude" type="hidden" label="COM_ITINERARY_FIELD_LONGITUDE_LABEL" class="" required="true" readonly="true" validate="number" min="-180" max="180"/>
+		<field name="latitude_msg_suiv" type="hidden" label="COM_ITINERARY_FIELD_LATITUDE_SUIV_LABEL" class="" readonly="true" validate="number" min="-90" max="90"/>
+		<field name="longitude_msg_suiv" type="hidden" label="COM_ITINERARY_FIELD_LONGITUDE_SUIV_LABEL" class="" readonly="true" validate="number" min="-180" max="180"/>
+		<field name="date_creation" type="hidden" label="COM_ITINERARY_FIELD_DATE_CREATION_LABEL" description="COM_ITINERARY_FIELD_DATE_CREATION_DESC" class="form-control" readonly="true"  disabled="true"/>
+		<field name="date_modification" type="hidden" label="COM_ITINERARY_FIELD_DATE_MODIFICATION_LABEL" description="COM_ITINERARY_FIELD_DATE_MODIFICATION_DESC" class="form-control" readonly="true"  disabled="true"/>
+		<field name="ordering" type="hidden" label="COM_ITINERARY_FIELD_NUM_MSG_LABEL" description="COM_ITINERARY_FIELD_NUM_MSG_DESC" class="numeromessage" readonly="true" disabled="true"/>
+		
+		<field 	name="activation_planificateur" 
+				type="radio" 
+				label="COM_ITINERARY_FIELD_MESSAGE_ACTIVATED_LABEL" 
+				description="COM_ITINERARY_FIELD_MESSAGE_ACTIVATED_DESC"  
+				required="true" 
+				validate="boolean"
+				class="btn-group-yesno">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field name="titre" type="text" label="JGLOBAL_TITLE" description="COM_ITINERARY_FIELD_MESSAGE_TITLE_DESC" class="" maxlength="100" required="true"/>
+		
+		<field name="texte" type="textarea" label="COM_ITINERARY_FIELD_MESSAGE_TEXTE_LABEL" description="COM_ITINERARY_FIELD_MESSAGE_TEXTE_DESC" required="true" maxlength="4000"/>
+		
+		<field name="illustrations" type="ItinerarySelectImage" accept="image/*" label="COM_ITINERARY_FIELD_MESSAGE_ILLUSTRATIONS_LABEL" description="COM_ITINERARY_FIELD_MESSAGE_ILLUSTRATIONS_DESC"  size="40" />
+		<field name="MAX_FILE_SIZE" type="hidden" value="610000" />
+
+		<field name="latitude" type="ItinerarySelectCoordinates" label="COM_ITINERARY_FIELD_POSITION_LABEL" description="COM_ITINERARY_FIELD_POSITION_DESC" class="" required="true" readonly="true" validate="number" min="-90" max="90"/>
+
+	</fieldset>
+</form>
