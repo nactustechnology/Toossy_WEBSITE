@@ -128,13 +128,14 @@ class ItineraryControllerPayment extends JControllerForm
 
             $app=JFactory::getApplication();
 
-            //Include the Stripe Library
+            //Include the 
+		e Library
             require_once(__ROOT__.'/libraries/stripe-php/init.php');
 
             //Charges the client's card
             // Set your secret key: remember to change this to your live secret key in production
             // See your keys here: https://dashboard.stripe.com/account/apikeys
-            \Stripe\Stripe::setApiKey("sk_live_5GUxWsf0g7EnEwDwFvpAR6nU");
+            \Stripe\Stripe::setApiKey("SECRET_API_KEY");
 
             // Token is created using Stripe.js or Checkout!
             // Get the payment token submitted by the form:
